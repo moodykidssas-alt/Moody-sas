@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Moody SAS | Bodega Mayorista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Moody SAS</h1>
+    <p>Bodega mayorista para emprendedores</p>
+</header>
+
+<nav>
+    <button onclick="filtrarCategoria('todos')">Todos</button>
+    <button onclick="filtrarCategoria('jugueteria')">Juguetería</button>
+    <button onclick="filtrarCategoria('alimentacion')">Alimentación</button>
+    <button onclick="filtrarCategoria('textil')">Textil</button>
+    <button onclick="filtrarCategoria('accesorios')">Accesorios</button>
+    <button onclick="filtrarCategoria('grande')">Grande</button>
+</nav>
+
+<main id="productos">
+
+    <!-- PRODUCTO -->
+    <div class="producto jugueteria">
+        <h3>Mordedor Sensorial</h3>
+        <p>Categoría: Juguetería</p>
+        <button onclick="agregarProducto('Mordedor Sensorial')">Agregar</button>
+    </div>
+
+    <div class="producto alimentacion">
+        <h3>Plato Antiderrame</h3>
+        <p>Categoría: Alimentación</p>
+        <button onclick="agregarProducto('Plato Antiderrame')">Agregar</button>
+    </div>
+
+    <div class="producto textil">
+        <h3>Body de Algodón</h3>
+        <p>Categoría: Textil</p>
+        <button onclick="agregarProducto('Body de Algodón')">Agregar</button>
+    </div>
+
+    <div class="producto accesorios">
+        <h3>Babero Impermeable</h3>
+        <p>Categoría: Accesorios</p>
+        <button onclick="agregarProducto('Babero Impermeable')">Agregar</button>
+    </div>
+
+</main>
+
+<section id="canasta">
+    <h2>Canasta</h2>
+    <ul id="lista-canasta"></ul>
+    <button id="enviar-whatsapp-btn" onclick="enviarWhatsApp()">Enviar pedido por WhatsApp</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
