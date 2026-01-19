@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moody SAS - Catálogo Mayorista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación simple -->
+    <nav>
+        <button id="home-btn">Inicio</button>
+        <button id="catalogo-btn">Catálogo</button>
+        <button id="canasta-btn">Canasta (<span id="canasta-count">0</span>)</button>
+    </nav>
+
+    <!-- Sección Home -->
+    <section id="home" class="active">
+        <div class="hero">
+            <h1>Moody SAS – Bodega Mayorista de Productos para Bebé</h1>
+            <p>Surtimos emprendedores y negocios con productos de alta rotación</p>
+            <button id="ver-catalogo-btn">Ver Catálogo</button>
+        </div>
+    </section>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo">
+        <h2>Catálogo de Productos</h2>
+        <div id="categorias">
+            <!-- Categorías se generan dinámicamente con JS -->
+        </div>
+        <div id="productos">
+            <!-- Productos se generan dinámicamente con JS -->
+        </div>
+    </section>
+
+    <!-- Sección Canasta -->
+    <section id="canasta">
+        <h2>Canasta de Cotización</h2>
+        <div id="canasta-lista">
+            <!-- Lista de productos en canasta se genera dinámicamente -->
+        </div>
+        <button id="enviar-whatsapp-btn">Enviar Pedido por WhatsApp</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
