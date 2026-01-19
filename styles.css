@@ -147,5 +147,10 @@ nav button:hover {
     border-radius: 12px;
     font-size: 12px;
 }
+.logo {
+    max-width: 140px;
+    margin-bottom: 12px;
+}
 
  
+
